@@ -7,7 +7,7 @@ import { Member } from './member';
   <h2>被選挙人名簿</h2>
   <ul>
       <li *ngFor="let member of members">
-          <br>{{member.name}}</br>:&nbsp;{{member.prof}}
+          <b>{{member.name}}</b>:&nbsp;{{member.prof}}
       </li>
   </ul>`,
 })
