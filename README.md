@@ -1,4 +1,4 @@
-# Yuki Nishizawa Update 20180115
+# Yuki Nishizawa Update 20180116
 Auto Update Git Repository ssh://angular:/home/ec2-user/my-app.git
 
 # MyApp
