@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Member } from './member';
 
 @Component({
-    selector: 'my-app',
+    selector: 'app-root',
     template: `<h1>{{name}}年度役員選挙</h1>
   <h2>被選挙人名簿</h2>
   <ul>
