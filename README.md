@@ -1,6 +1,3 @@
-# Yuki Nishizawa Update
-Auto Update Git Repository ssh://angular:/home/ec2-user/my-app.git
-
 # MyApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
