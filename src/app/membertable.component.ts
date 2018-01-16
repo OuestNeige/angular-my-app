@@ -4,12 +4,7 @@ import { Member } from './member';
 
 @Component({
     selector: 'membertable',
-    template: `<h2>被選挙人名簿</h2>
-    <ul>
-        <li *ngFor="let member of members">
-          <b>{{member.name}}</b>:&nbsp;{{member.prof}}
-        </li>
-    </ul>`,
+    templateUrl: './membertable.component.html' 
 })
 export class MembertableComponent {
    
