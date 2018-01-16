@@ -2,6 +2,6 @@
 <table>
     <tr *ngFor="let member of members" (click)="onSelect(member)">
         <td class = "name" [class.name-selected]="member===selectedmember"><b>{{member.name}}</b></td>
-        <td class = "prof" [class.name-selected]="member===selectedmember"> {{member.prof}}<td>
+        <td class = "prof" [class.prof-selected]="member===selectedmember"> {{member.prof}}<td>
     </tr>
 </table>
