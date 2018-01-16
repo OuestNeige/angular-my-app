@@ -12,7 +12,7 @@ export class MembertableComponent {
     members = Member.members;
 
     selectedMember:Member;
-    omSelect(member:Member){
+    onSelect(member:Member){
         this.selectedMember=member;
     }
 }
