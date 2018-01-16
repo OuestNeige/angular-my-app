@@ -4,3 +4,13 @@
 .prof{
     background-color: beige;
 } 
+
+.neme-selected{
+    background-color: maroon;
+    color: beige;
+}
+
+.prof-selected{
+    background-color: khaki;
+    color: maroon;
+}

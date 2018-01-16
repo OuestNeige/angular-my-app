@@ -10,9 +10,4 @@ import { Member } from './member';
 export class MembertableComponent {
    
     members = Member.members;
-
-    selectedMember:Member;
-    omSelect(member:Member){
-        this.selectedMember=member;
-    }
 }
