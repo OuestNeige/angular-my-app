@@ -5,7 +5,7 @@ import { Member } from './member';
 @Component({
     selector: 'membertable',
     templateUrl: './membertable.component.html',
-    styleUrls: ['./mmembertable.component.css']
+    styleUrls: ['./membertable.component.css']
 })
 export class MembertableComponent {
    
