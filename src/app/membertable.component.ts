@@ -21,7 +21,7 @@ export class MembertableComponent {
         this.whoisselected = "";
     };
 
-    isselected(themember: Member):number{
+    isselected(themember:Member):number{
         for (let i = 0; i < this.selectedMembers.length; i++) {
             if (this.selectedMembers[i] == themember) {
                 return i;
@@ -49,7 +49,7 @@ export class MembertableComponent {
     showwhoisselected():string{
         let whois = "";
         for(let member of this.selectedMembers){
-           whois+=Member.name+"さん, "; 
+           whois+=member.name+"さん, "; 
         }
         return whois.substr(0, whois.length-2)+"が選択されました。";
     }
