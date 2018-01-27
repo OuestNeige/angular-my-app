@@ -12,14 +12,14 @@ export class MembertableComponent {
     members = Member.members;
 
     //selectedMember:Member;
-    selectedMember:Member[];
+    selectedMembers:Member[];
     constructor() {
-        this.selectedMember = new Array();
+        this.selectedMembers = new Array();
     };
 
     isselected(themember: Member): number {
-        for (let i = 0; i < this.selectedMember.length; i++) {
-            if (this.selectedMember[i] == themember) {
+        for (let i = 0; i < this.selectedMembers.length; i++) {
+            if (this.selectedMembers[i] == themember) {
                 return i;
             }
         }
@@ -27,8 +27,14 @@ export class MembertableComponent {
     }
 
     onSelect(member:Member){
-    //this.selectedMember=member;
-    this.selectedMember.push(member);
+        let selectedindex = this.isselected(member);
+        if (selectedindex >=0) {
+            this.selectedMembers.splice(selectedindex, 1);
+        }else{
+            this.selectedMembers.push(member);
+        }
+        //this.selectedMember=member;
+        //this.selectedMembers.push(member);
     }
 }
 
