@@ -1,7 +1,7 @@
 <h2>被選挙人名簿</h2>
 <table>
     <tr *ngFor="let member of members" (click)="onSelect(member)">
-        <td class = "name" [class.name-selected]="member===selectedMember"><b>{{member.name}}</b></td>
-        <td class = "prof" [class.prof-selected]="member===selectedMember"> {{member.prof}}<td>
+        <td class = "name" [class.name-selected]="isselected(member)>=0"><b>{{member.name}}</b></td>
+        <td class = "prof" [class.prof-selected]="isselected(member)>=0"> {{member.prof}}<td>
     </tr>
 </table>
