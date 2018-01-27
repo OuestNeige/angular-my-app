@@ -30,6 +30,8 @@ export class MembertableComponent {
         let selectedindex = this.isselected(member);
         if (selectedindex >=0) {
             this.selectedMembers.splice(selectedindex, 1);
+        }else if (this.selectedMembers.length > 3) {
+            //this.selectedMembers.push(member);
         }else{
             this.selectedMembers.push(member);
         }
