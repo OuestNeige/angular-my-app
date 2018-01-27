@@ -13,10 +13,12 @@ export class MembertableComponent {
     //selectedMember:Member;
     selectedMembers:Member[];
     overflow:boolean;
+    whoisselected:string;
 
     constructor() {
         this.selectedMembers = new Array();
         this.overflow = false;
+        this.whoisselected = "";
     };
 
     isselected(themember: Member):number{
@@ -41,6 +43,15 @@ export class MembertableComponent {
         }
         //this.selectedMember=member;
         //this.selectedMembers.push(member);
+        this.whoisselected = this.showwhoisselected();
+    }
+
+    showwhoisselected():string{
+        let whois = "";
+        for(let member of this.selectedMembers){
+           whois+=Member.name+"さん, "; 
+        }
+        return whois.substr(0, whois.length-2)+"が選択されました。";
     }
 }
 
