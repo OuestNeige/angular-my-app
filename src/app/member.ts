@@ -14,7 +14,6 @@ export class Member {
         { id: 7, name: "ロッシーニ" , prof: "学生なのでわりとスケジュールがゆるいがテスト期間は動けない" },
         { id: 8, name: "モーツァルト" , prof: "なにができるというわけでもないがやる気はあります" },
         { id: 9, name: "チャイコフスキー" , prof: "English OK" },
-        { id: 10, name: "ニシザワ　ユウキ" , prof: "English NG" },
     ];
 
 } 
