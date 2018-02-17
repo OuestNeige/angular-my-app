@@ -7,7 +7,9 @@ import { MembertableComponent } from './membertable.component';
     template: `<h1>{{name}}年度役員選挙</h1>
       <a routerLink="/membertable routerLinkActive="active">被選挙人名簿を見る</a>
       <a routerLink="/poll" routerLinkActive="active">中間報告を見る</a>
-      <router-outlet></router-outlet>
+      <div class="outlet">
+        <router-outlet></router-outlet>
+      </div>
       `,
       styleurls: ['./app.component.css']
 })
