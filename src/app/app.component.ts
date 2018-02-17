@@ -5,7 +5,9 @@ import { MembertableComponent } from './membertable.component';
 @Component({
     selector: 'app-root',
     template: `<h1>{{name}}年度役員選挙</h1>
-      <membertable></membertable>`,
+      <a routerLink="membertable">被選挙人名簿を見る</a>
+      <router-outlet></router-outlet>
+      `,
 })
 export class AppComponent {
     name = '2017';
