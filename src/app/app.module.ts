@@ -15,7 +15,7 @@ import { PollComponent } from './poll.component';
   imports: [
     BrowserModule,
     RouterModule.forRoot(
-      [{path: '', redirectTo: '/membertable', pathMatch:'ful'},
+      [{path: '', redirectTo: '/membertable', pathMatch:'full'},
        {path: 'membertable', component: MembertableComponent },
        {path: 'poll', component: PollComponent }
       ]
