@@ -4,16 +4,21 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MembertableComponent } from './membertable.component';
+import { MembertableComponent } from './poll.component';
+import { PollComponent } from '../poll.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MembertableComponent
+    MembertableComponent,
+    PollComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(
-      [{path: 'membertable', component: MembertableComponent },]
+      [{path: 'membertable', component: MembertableComponent },
+       {path: 'poll', component: PollComponent }
+      ]
     )
   ],
   providers: [],
